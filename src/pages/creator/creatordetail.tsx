@@ -16,8 +16,12 @@ export const CreatorDetail = ()=> {
     const { id } = useParams();
 
     React.useEffect(() => {
+
+        // gets creator from list of creators using the id from the url.
         const creator = allCreators[Number(id)]
         setCurrentCreator(creator);
+
+        // sets loading to false after getting creator
         setLoading(false)
     }, [id]);
 
@@ -29,6 +33,7 @@ export const CreatorDetail = ()=> {
             </Layoutwlogo>
         )
     }
+    
     // Handle the case when the creator with the specified id doesn't exist
     // also shows the creator detail when found
     else {
