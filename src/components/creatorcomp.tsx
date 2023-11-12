@@ -18,7 +18,7 @@ export const CreatorCard:React.FC<creatorCardProps> = (props)=> {
     let handleShowDetail = () => showCreatorDetail && showCreatorDetail(id)
 
     return (
-        <motion.div 
+        <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{duration:.2}}
             className="w-[87vw] md:w-[50%] h-fit px-[15px] pt-[20px] pb-[20px] rounded-[10px] bg-white border-[1.5px] border-main-902
@@ -27,7 +27,7 @@ export const CreatorCard:React.FC<creatorCardProps> = (props)=> {
         >
 
             <div className="min-w-[60px] w-[60px] h-[60px] overflow-clip rounded-full border-[.5px] border-main-902  ">
-                <img src={data.image} alt="creator avatar" />
+                <img src={data.image} loading="lazy" alt="creator avatar" />
             </div>
 
             <div className="flex flex-col gap-[20px] text-main-902 text-left">
