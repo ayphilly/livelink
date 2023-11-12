@@ -26,7 +26,7 @@ export const CreatorCard:React.FC<creatorCardProps> = (props)=> {
         >
 
             <div className="min-w-[60px] w-[60px] h-[60px] overflow-clip rounded-full border-[.5px] border-main-902  ">
-                <img src={data.image} alt="user" />
+                <img src={data.image} alt="creator avatar" />
             </div>
 
             <div className="flex flex-col gap-[20px] text-main-902 text-left">

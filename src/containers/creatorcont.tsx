@@ -9,7 +9,7 @@ export const ListCreators = ()=> {
     
     // handles the navigation to view creator deail
     let goToCreatorDetail = (id:number)=> {
-        navigate(`/user/${id}`)
+        navigate(`/creator/${id}`)
     }
 
 

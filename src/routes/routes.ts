@@ -12,7 +12,7 @@ const allCreatorsRoute: baseRouteModel = {
 };
 
 const creatorDetailRoute: baseRouteModel = {
-    path: '/user/:id',
+    path: '/creator/:id',
     component: CreatorDetail,
 };
 
