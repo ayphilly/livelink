@@ -5,6 +5,7 @@ import { allCreators } from "../../data";
 import { creatorModel } from "../../models/creatormodel";
 import { useParams } from "react-router-dom";
 import { TitleBody } from "../../components/common";
+import { getCreator } from "../../helper";
 
 
 export const CreatorDetail = ()=> {
@@ -15,14 +16,17 @@ export const CreatorDetail = ()=> {
     // getting selected creator id from the url
     const { id } = useParams();
 
-    React.useEffect(() => {
-
-        // gets creator from list of creators using the id from the url.
-        const creator = allCreators[Number(id)]
-        setCurrentCreator(creator);
+    let storeCreator =(creator:creatorModel)=> {
+        setCurrentCreator(creator)
 
         // sets loading to false after getting creator
         setLoading(false)
+    }
+
+    
+    React.useEffect(() => {
+        // gets creator from list of creators using the id from the url.
+        getCreator({id:Number(id),cb:storeCreator})
     }, [id]);
 
     //  this handles mini loading of the page

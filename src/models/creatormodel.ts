@@ -4,3 +4,8 @@ export interface creatorModel {
     title:string;
     detail:string
 }
+
+export interface getCreatorModel {
+    id: number;
+    cb:(cretor:creatorModel)=>void
+}
