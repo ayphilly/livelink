@@ -5,7 +5,7 @@ export interface creatorModel {
     detail:string
 }
 
-export interface getCreatorModel {
+export interface getCreatorArgs {
     id: number;
     cb:(cretor:creatorModel)=>void
 }
