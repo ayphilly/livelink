@@ -21,7 +21,7 @@ export const CreatorCard:React.FC<creatorCardProps> = (props)=> {
         <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{duration:.2}}
-            className="w-[87vw] md:w-[50%] h-fit px-[15px] pt-[20px] pb-[20px] rounded-[10px] bg-white border-[1.5px] border-main-902
+            className="w-[87vw] md:w-[50%] h-fit px-[15px] pt-[20px] pb-[20px] rounded-[10px] bg-white border-[2px] border-main-902
             flex items-start gap-[15px] cursor-pointer"
             onClick={handleShowDetail}
         >
