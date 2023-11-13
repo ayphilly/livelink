@@ -21,7 +21,7 @@ export const CreatorCard:React.FC<creatorCardProps> = (props)=> {
         <motion.div
             whileHover={{ scale: 1.1 }}
             transition={{duration:.2}}
-            className="w-[87vw] md:w-[50%] h-fit px-[15px] pt-[20px] pb-[20px] rounded-[10px] bg-white border-[2px] border-main-902
+            className="w-[87vw] md:w-[50%] h-fit px-[15px] pt-[20px] pb-[25px] rounded-[10px] bg-white border-[2px] border-main-902
             flex items-start gap-[15px] cursor-pointer"
             onClick={handleShowDetail}
         >
@@ -32,9 +32,9 @@ export const CreatorCard:React.FC<creatorCardProps> = (props)=> {
 
             <div className="flex flex-col gap-[20px] text-main-902 text-left">
 
-                <span className="flex flex-col gap-[4px] ">
+                <span className="flex flex-col gap-[2px] ">
                     <p className="my-0 text-[1.2em] font-[600] capitalize" > {data.name} </p>
-                    <p className="my-0 text-[1em] font-[500] capitalize-first" > {data.title} </p>
+                    <p className="my-0 text-[1.2em] font-[400] capitalize-first" > {data.title} </p>
                 </span>
                 {showDetail && (
                     <p className="my-0 text-[1em] font-[500] mb-[25px] capitalize-first">
