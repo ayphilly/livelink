@@ -21,7 +21,7 @@ export const ListCreators:React.FC<ListCreatorsProps> = (props)=> {
         <section className="w-full flex flex-col items-center gap-[20px]">
             {
                 (creators ?? []).map((item,id)=> (
-                    <CreatorCard key={id.toString()} data={item} id={id} showDetail={false}  showCreatorDetail={goToCreatorDetail}  />
+                    <CreatorCard key={id.toString()} data={item} id={item.id} showDetail={false}  showCreatorDetail={goToCreatorDetail}  />
                 ))
             }
         </section>
