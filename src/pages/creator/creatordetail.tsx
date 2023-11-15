@@ -1,7 +1,6 @@
 import React from "react";
 import { CreatorCard } from "../../components/creatorcomp"
 import { Layoutwlogo } from "../../containers/layout"
-import { allCreators } from "../../data";
 import { creatorModel } from "../../models/creatormodel";
 import { useParams } from "react-router-dom";
 import { TitleBody } from "../../components/common";

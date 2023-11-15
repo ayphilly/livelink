@@ -15,3 +15,20 @@ export const TitleBody:React.FC<titelBodyProps> = (props)=> {
         </span>
     )
 }
+
+
+interface searchProps {
+    value:string;
+    handleSearch:(e:React.ChangeEvent<HTMLInputElement>)=> void
+}
+
+export const Searchbox:React.FC<searchProps> = (props)=> {
+
+
+    return (
+        <input type="text" value={props.value} onChange={props.handleSearch}  placeholder="Search by name" 
+            className="lg:w-[350px] h-[50px] bg-white border-[1px] border-main-902 text-[1em] text-main-902
+            px-[10px] rounded-[5px] 
+            " />
+    )
+}
